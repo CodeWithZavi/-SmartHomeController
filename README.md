@@ -18,8 +18,4 @@ This project simulates a Smart Home system where different devices (Light, Fan, 
 controller.handleCommand("turn on light");
 controller.handleCommand("turn off fan");
 controller.handleCommand("set temperature 22");
-## Output
-Light is turned ON
-Fan is turned OFF
-ClimateControl temperature set to 22 degrees
 
