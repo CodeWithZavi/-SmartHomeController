@@ -11,12 +11,22 @@ This project simulates a Smart Home system where different devices (Light, Fan, 
 - Set the temperature
 - Modular design using the Controller pattern
 
-## Code Example
+## Implementations
+
+This repository demonstrates two implementations of a Smart Home system that controls devices like lights, fans, and climate control. The project focuses on the application of the **GRASP Controller** principle and contrasts it with a version that does not use a controller.
+
+### 1. Without GRASP Controller
+
+In this version, each smart home device (Light, Fan, ClimateControl) is directly controlled by the main class (`SmartHomeApp`). This approach tightly couples the main class with the device control logic, making the system harder to maintain and extend.
+
+#### Code Example:
 
 ```java
-// Sample command execution
-controller.handleCommand("turn on light");
-controller.handleCommand("turn off fan");
-controller.handleCommand("set temperature 22");
+Light light = new Light();
+Fan fan = new Fan();
+ClimateControl climateControl = new ClimateControl();
 
-
+// Direct control without a controller
+light.turnOn();
+fan.turnOff();
+climateControl.setTemperature(22);
