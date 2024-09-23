@@ -14,8 +14,11 @@ This project simulates a Smart Home system where different devices (Light, Fan, 
 ## Implementations
 
 This repository demonstrates two implementations of a Smart Home system that controls devices like lights, fans, and climate control. The project focuses on the application of the **GRASP Controller** principle and contrasts it with a version that does not use a controller.
+### 1.With GRASP Controller
 
-### 1. Without GRASP Controller
+This version introduces a HomeController class that manages smart home devices and their commands, following the GRASP Controller principle. This approach promotes better modularity, scalability, and separation of concerns.
+
+### 2. Without GRASP Controller
 
 In this version, each smart home device (Light, Fan, ClimateControl) is directly controlled by the main class (`SmartHomeApp`). This approach tightly couples the main class with the device control logic, making the system harder to maintain and extend.
 
