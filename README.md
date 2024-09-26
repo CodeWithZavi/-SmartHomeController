@@ -24,6 +24,8 @@ In this version, each smart home device (Light, Fan, ClimateControl) is directly
 
 #### Code Example:
 
+https://github.com/user-attachments/assets/cc5a215d-450c-466d-8851-e6734bc19eff
+
 ```java
 Light light = new Light();
 Fan fan = new Fan();
@@ -33,3 +35,4 @@ ClimateControl climateControl = new ClimateControl();
 light.turnOn();
 fan.turnOff();
 climateControl.setTemperature(22);
+
